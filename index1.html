@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document</title>
+    </head>
+<body>
+
+<button onclick="turnOn();">Turn On</button>
+<img src="bulboff.png.png" alt="bulboff" id="bulb" width="10%">
+<button onclick="turnoff();">Turn off</button>
+
+<script>
+    var bulb = document.getElementById("bulb");
+
+    function turnOn(){
+        bulb.src = "bulbon.png.png";
+    }
+    function turnoff(){
+        bulb.src = "bulboff.png.png";
+    }
+</script>
+</body>
+</html>
