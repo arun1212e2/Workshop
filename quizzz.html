@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Quiz Application</title>
+</head>
+<body>
+    Q1. How many days makes a week ?<br>
+    <input type="radio" name="question1" >10<br>
+    <input type="radio" name="question1" >14<br>
+    <input type="radio" name="question1" >5<br>
+    <input type="radio" name="question1" id="correct1" >7<br>
+
+    Q2. How manay hours can be found in a day ? <br>
+    <input type="radio" name="question2" >30 hours<br>
+    <input type="radio" name="question2" >48 hours<br>
+    <input type="radio" name="question2" id="correct2" >24 hours<br>
+    <input type="radio" name="question2" >28 hours<br>
+
+    Q3. Which country is the largest in the world ? <br>
+    <input type="radio" name="question3" id="correct3" >Russia<br>
+    <input type="radio" name="question3" >Canada<br>
+    <input type="radio" name="question3" >Africa<br>
+    <input type="radio" name="question3" >Egypt<br>
+
+    Q4. Which of these numbers is an odd number ? <br>
+    <input type="radio" name="question4" >Ten<br>
+    <input type="radio" name="question4" >Twelve<br>
+    <input type="radio" name="question4" >Eight<br>
+    <input type="radio" name="question4" id="correct4" >Eleven<br>
+
+    Q5. Which Planet is the hottest ? <br>
+    <input type="radio" name="question5" >Jupitar<br>
+    <input type="radio" name="question5" id="correct5" >Mercury<br>
+    <input type="radio" name="question5" >Earth<br>
+    <input type="radio" name="question5" >Venus<br>
+
+<input type="submit" name="submit" value="SubmitQuiz" onClick="result()">
+<script type="text/javascript">
+function result()
+{
+	var score=0;
+	if(document.getElementById('correct1').checked)
+		{	score++;
+		}
+	if(document.getElementById('correct2').checked)
+		{	score++;
+		}
+	if(document.getElementById('correct3').checked)
+		{	score++;
+		}
+    if(document.getElementById('correct4').checked)
+		{	score++;
+		}
+    if(document.getElementById('correct5').checked)
+		{	score++;
+		} 
+ alert("Your score is:"+score);
+}
+</script>
+
+</body>
+</html>
